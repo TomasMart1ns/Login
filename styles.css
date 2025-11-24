@@ -10,24 +10,6 @@
   border-left:3px solid transparent;
   transition:all 0.2s;
 }
-
-.nav-dropdown-content {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  background: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  min-width: 160px;
-  z-index: 100;
-  flex-direction: column;
-}
-.nav-dropdown:hover .nav-dropdown-content,
-.nav-dropdown:focus-within .nav-dropdown-content {
-  display: flex;
-}
-<style>
         /* Estilos específicos para centralizar o formulário de login */
         .login-container {
             display: flex;
@@ -68,7 +50,65 @@
         .forgot-password a:hover {
             text-decoration: underline;
         }
-    </style>
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  min-width: 160px;
+  z-index: 100;
+  flex-direction: column;
+}
+.nav-dropdown:hover .nav-dropdown-content,
+.nav-dropdown:focus-within .nav-dropdown-content {
+  display: flex;
+}
+
+        /* Estilos específicos para centralizar o formulário de login */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg); /* Usa a cor de fundo definida no CSS */
+        }
+        .login-card {
+            width: 100%;
+            max-width: 400px; /* Limita a largura do card para focar o formulário */
+            padding: 20px;
+            text-align: center;
+        }
+        .login-card h2 {
+            margin-bottom: 25px;
+            color: var(--accent); /* Usa a cor de destaque para o título */
+        }
+        .form-label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: -5px; /* Ajuste para colocar perto do campo de senha */
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+        .forgot-password a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    
 .nav-dropdown-link {
   padding:10px 15px;
   color:#333;
